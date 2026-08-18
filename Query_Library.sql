@@ -62,7 +62,8 @@ u.apellidos
 from grupoUsuarioParticipante gup , grupoUsuario gu, usuario u
 where gu.grupoUsuarioId =gup.grupoUsuarioId 
 and gup.usuarioId =u.usuarioId 
-and gu.nombre like "%aprobadores - entregas Voluntarias (recogidos)%"
+-- and gu.nombre like "%aprobadores - entregas Voluntarias (recogidos)%"
+and u.codigoEmpleado in ('6035','5967')
 and not u.codigoEmpleado in ('1093','4904', '0847','3798','2895','0001','3931','5335','5215','n01');  -- Códigos de empleados de técnicos y el de dámaris es 1093
 
 

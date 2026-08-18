@@ -224,6 +224,15 @@ select * from dte where dteId='2053606';
 
 select * from cliente where nit=82090785;
 
+select * from cliente where cui in (2076945240802,2076945240801);
+
+
+select * from historialSIB 
+-- delete from historialSIB
+where clienteid=481 and fechaCreacion > '2026-01-01';
+
+select * from tipoIve ti ;
+
 
 
  

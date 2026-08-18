@@ -125,11 +125,10 @@ inner join dteVenta dv
 on dv.dteId = d.dteId
 inner join venta v
 on dv.ventaId = v.ventaId
-where dv.ventaId  = 852560;
+where d.estadoExternoId =1 -- dv.ventaId  = 1076736
+and d.fechaCreacion> '2026-08-01' ;
 
-select * from ventaAbonoAcordado vaa  where ventaid=359123;
 
-select * from reciboPago rp where rp.clienteid=104281      --   rp.reciboPagoId =2040034;
 
 
 
@@ -168,4 +167,10 @@ on ee.estadoExternoId =d.estadoExternoId
 where dv.ventaId  in (359976,359977,359987); -- 
 
 -- PARA VALIDACION DE INTEGRACIONES
+
+
+
+
+
+
 
