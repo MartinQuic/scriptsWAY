@@ -171,6 +171,6 @@ where dv.ventaId  in (359976,359977,359987); --
 
 
 
-
+select * from venta where ventaid=23545;
 
 
