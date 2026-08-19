@@ -1,1 +1,0 @@
-select * from vw_usuariosSimply vus where codigoEmpleado = 4075

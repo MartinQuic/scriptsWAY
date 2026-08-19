@@ -66,7 +66,12 @@ select * from tipoIve ti ;
 
 
 
-
+select * from dteRecibido do 
+where do.dteRecibidoId in 
+		(select dri.dteRecibidoId   from dteRecibidoItem dri 
+		where dri.descripcion like '%chasis%' 
+		 )
+ And do.nitEmisor='1198416' 	
 
 
 
@@ -171,6 +176,6 @@ where dv.ventaId  in (359976,359977,359987); --
 
 
 
-select * from venta where ventaid=23545;
+
 
 
